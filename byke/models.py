@@ -41,7 +41,7 @@ class Adult(Person):
 
 class Bike(models.Model):
     name = models.CharField(max_length=100, blank=True)
-    when_created = models.DateTimeField(default=datetime.datetime.now)
+    when_added = models.DateTimeField(default=datetime.datetime.now)
     shop_number = models.CharField(max_length=100, blank=True)
     identifying_info = JSONField()
     photo = models.ImageField()
